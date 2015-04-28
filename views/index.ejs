@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+
+<p>Welcome to <%= title %>
+    <%
+    for(var i = 1;i < data.length;i++){
+    %>
+
+<p>
+    <span><%= data[i].commit.author.name %></span>
+    <span style="color: #39b014"><%= data[i].sha %></span>
+</p>
+<%
+}
+%>
+</body>
+</html>
