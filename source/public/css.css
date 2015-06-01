@@ -1,0 +1,27 @@
+table{
+	border-collapse:collapse;
+}
+
+table td{
+	border:1px solid #000;
+	background:#ccc;
+	padding:3px 10px;
+}
+
+.light{
+	color:#e6f1f6;
+}
+
+.nav a{
+	padding:0 10px;
+}
+
+.author{
+	margin:10px;
+}
+
+.author img{
+	width:45px;
+	border-radius:4px;
+	vertical-align:middle;
+}

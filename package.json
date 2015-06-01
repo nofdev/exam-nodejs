@@ -1,0 +1,16 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "exam project",
+  "main": "./source/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiajiangxu",
+  "license": "ISC",
+  "dependencies": {
+    "ect": "^0.5.9",
+    "express": "^4.12.4",
+    "octonode": "^0.6.17"
+  }
+}

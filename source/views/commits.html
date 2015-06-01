@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include 'head' %>
+</head>
+<body>
+	<% include 'nav' %>
+	<table>
+		<!-- thead -->
+		<thead>
+			<tr>
+				<th>sha</th>
+				<th>author</th>
+				<th>committer</th>
+			</tr>
+		</thead>
+		<!-- ./thead -->
+		<!-- tbody -->
+		<tbody>
+			<% if @commits?.length : %>
+				<% for commit in @commits : %>
+					<tr <% if 0 <= parseInt(commit.sha.substr -1) and parseInt(commit.sha.substr -1) <=9 : %> class="light" <% end %>>
+						<td><%- commit.sha.substr -6 %></td>
+						<td><%- commit.commit.author.name %></td>
+						<td><%- commit.commit.committer.name %></td>
+					</tr>
+				<% end %>
+			<% else : %>
+				<p>Commit is empty</p>
+			<% end %>
+		</tbody>
+		<!-- ./tbody -->
+	</table>
+</body>
+</html>
